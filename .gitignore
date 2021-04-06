@@ -1,0 +1,4 @@
+file_uploads
+.idea
+__pycache__
+docs.db

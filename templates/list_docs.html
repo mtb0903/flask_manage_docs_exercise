@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uploaded documents</title>
+</head>
+<body>
+    <h1>Uploaded Documents</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Document</th>
+            <th>OCR</th>
+        </tr>
+        {% for r in rows %}
+        <tr>
+            <td>{{r[0]}}</td>
+            <td>{{r[1]}}</td>
+            <td>{{r[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

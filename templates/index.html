@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+    <br>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <ul>
+        <li><a href="/add_doc">Upload document</a></li>
+        <li><a href="/list_docs">List my documents</a></li>
+        <li><a href="/run_ocr">Dummy OCR analyzes</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</body>
+</html>

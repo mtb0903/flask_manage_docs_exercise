@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Run Dummy OCR Analysis</title>
+</head>
+<body>
+    <h1>Run Dummy OCR Analysis</h1>
+    <form action="/run_ocr" method=post>
+        <input type=number name=doc_id>
+        <input type=submit value=Run>
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
