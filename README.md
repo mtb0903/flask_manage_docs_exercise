@@ -45,24 +45,24 @@ If you feel like you need to skip certain aspects of the implementation due to l
    * [pip_requirements.txt](pip_requirements.txt)
 1. Navigate to the project root directory
 1. Run the flask application 
- Windows CMD
- ```
- set FLASK_APP=app.py
- flask run
- ```
- Linux
- ```
- export FLASK_APP=app.py
- python -m flask run
- ```
+   * Windows CMD
+   ```
+   set FLASK_APP=app.py
+   flask run
+   ```
+   * Linux
+   ```
+   export FLASK_APP=app.py
+   python -m flask run
+   ```
 1. Manually add users to the database
- The application does not provide any sign-up form. That's why it is required to manually add users in the database by executing the following script:
- ```
- python create_db.py
- ```
+   The application does not provide any sign-up form. That's why it is required to manually add users in the database by executing the following script:
+   ```
+   python create_db.py
+   ```
 1. Login
- Open the URL off your Flask server, e.g. http://127.0.0.1:5000/
- Enter the credentials of an user you previously created.
+   Open the URL off your Flask server, e.g. http://127.0.0.1:5000/.
+   Enter the credentials of an user you previously created.
 
 # Basic functionality implemented
 * Login
@@ -75,8 +75,8 @@ If you feel like you need to skip certain aspects of the implementation due to l
 * Approx. 5 hours spent on coding and additionally some time for Git upload and documentation 
 * No sign-up form exists
 * Uploaded documents will be saved on disk of Flask server; The database just stores an id, file name and user_id (owner) for each uploaded document
-* Possible database model prepared for adding arbitrary key-value pairs to a document 
 * Not implemented: Delete document, donwload document, Add document attributes, Edit document attributes, Delete document attributes, List document attributes
+* Possible database model prepared for adding arbitrary key-value pairs to a document 
 * No caching is implemented
 
 # Sources used for development:
